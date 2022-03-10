@@ -1,0 +1,483 @@
+html, body {
+height: 100%;
+background-color: rgb(161, 185, 170);
+font-family: "Gideon Roman", curisive;
+}
+
+/* shadow effect*/
+
+#author {
+    font-size: 50px;
+    text-shadow: 0px 0px 11px rgba(15, 15, 15, 0.3);
+    transition: 1s ease-in-out;
+    color: transparent;
+    letter-spacing: normal;
+    margin-left: 210px;
+    top: 500px;
+    left: 220px;
+    z-index: 4;
+    font-weight: bolder;
+    position: absolute;
+
+}
+
+#author:hover{
+    color: white;
+    cursor:pointer;
+}
+
+  .container {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 52%;
+    top: 15%;
+    margin-top: 20%;
+    z-index: 1;
+}
+
+.text {
+    font-size: 190px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgb(103, 134, 115);
+    letter-spacing: 20px;
+    z-index: 2;
+    font-family: "Gideon Roman", curisive;
+}
+
+p{
+    background-color: (161, 185, 170);
+    color:rgb(9, 49, 24);
+    margin-top: 1000px;
+    font-size: 25px;
+    padding: 60px;
+    padding-left: 430px;
+    padding-right: 430px;
+    line-height: 1.7em;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-family: 'Overpass', sans-serif;
+    text-shadow:2px 2px 5px rgb(207, 239, 220);
+}
+
+.text:hover + p {
+    visibility: visible;
+}
+
+.text:hover {
+    cursor:pointer;
+    font-size: 170px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: 0px 0px 11px rgba(15, 15, 15, 0.3);
+    transition: 1s ease-in-out;
+    color: transparent;
+    letter-spacing: 20px;
+    z-index: 2;
+}
+
+        /*text properties*/
+
+.container2{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.item {
+    height: 500px;
+    width: 1300px;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 180px;
+    text-align: justify;
+    line-height: 1.7em;
+    margin-left: 200px;
+    text-indent: 2em;
+}
+
+.size {
+    font-size: 40px;
+    color: darkolivegreen;
+}
+
+.space{
+    font-size: 40px;
+    color:rgb(1, 110, 1);
+    font-family: "Averia Serif Libre";
+    padding: 20px;
+    margin: 0 15px;
+	text-align: center;
+    text-shadow:2px 2px 5px rgb(207, 239, 220);
+}
+
+.space:hover {
+    -webkit-animation: test 10s infinite;
+    animation-delay:1s;
+    transition-timing-function: ease-in-out;
+    animation: test 10s infinite;
+    /* -webkit-animation: test 10s infinite; Chrome, Safari, Opera */
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes test {
+    50% {letter-spacing: 10px;}
+}
+/* Standard syntax */
+@keyframes test {
+    50% {letter-spacing: 10px;}
+}
+
+.eye2 {
+    transition: 1s ease-in-out;
+    visibility: hidden;
+}
+
+.eye {
+    font-size: 40px;
+    font-family: "Averia Serif Libre";
+    color:rgb(1, 110, 1);
+    text-shadow:2px 2px 5px rgb(207, 239, 220);
+}
+
+.eye:hover+.eye2{
+    font-size: 100px;
+    transition: 1s ease-in-out;
+    visibility: visible;
+    font-family: "Averia Serif Libre";
+}
+
+.eye:hover {
+    text-decoration: red line-through;
+}
+
+.effect {
+    text-shadow: 0px 3px 12px rgba(0, 0, 0, 0.434);
+    transition: 1s ease-in-out;
+    color: transparent;
+}
+
+.effect:hover{
+    color:rgb(187, 210, 196);
+    cursor:pointer;
+    font-weight: bold;
+}
+
+.item1{
+    width: 1300px;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 200px;
+    text-indent: 2em;
+    margin-bottom: 70px;
+    line-height: 1.7em;
+}
+
+.two {
+    font-size: 40px;
+    color: darkolivegreen;;
+}
+
+a {
+    color:rgb(1, 110, 1) ;
+    text-decoration: none;
+    font-family: "Averia Serif Libre";
+    font-size: 40px;
+    text-shadow:2px 2px 5px rgb(207, 239, 220);
+}
+
+.tooltip {
+    color:rgb(1, 110, 1) ;
+    text-decoration: none;
+    font-family: "Averia Serif Libre";
+    font-size: 40px;
+    text-shadow:2px 2px 5px rgb(207, 239, 220);
+    background: none;
+    border: none;
+}
+
+.tooltip:hover+#zillow{
+    transition: 1s ease-in-out;
+    display: block;
+}
+
+#zillow {
+    transition: 1s ease-in-out;
+    display: none;
+}
+
+.item2{
+    width: 1300px;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    line-height: 1.7em;
+    margin-left: 200px;
+    text-indent: 2em;
+}
+
+.tooltip:hover+#hole{
+    transition: 1s ease-in-out;
+    display: block;
+}
+
+#hole {
+    transition: 1s ease-in-out;
+    display: none;
+}
+
+.three {
+    font-size: 40px;
+    color: darkolivegreen;
+}
+
+.four {
+    font-size: 40px;
+    color: rgb(1, 110, 1) ;
+}
+
+.five {
+    font-size: 40px;
+    color:rgb(11, 82, 38); 
+}
+
+.six {
+    font-size: 40px;
+    color:rgb(8, 58, 27); 
+}
+
+.glow {
+    color: rgb(1, 110, 1);
+    text-decoration: none;
+    font-family: "Averia Serif Libre";
+    font-size: 40px;
+    text-shadow:2px 2px 5px rgb(207, 239, 220);
+}
+
+.glow:hover{
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    color: white;
+}
+
+.glow2 {
+    color:rgb(15, 1, 93);
+    font-family: "Averia Serif Libre";
+    font-size: 40px;
+    text-shadow:2px 2px 5px rgb(207, 239, 220);
+}
+
+.glow2:hover{
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    color: white;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #e7ff4d, 0 0 40px #ff4da6, 0 0 50px #edff4d, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+.fade-out {
+    color:rgb(1, 110, 1) ;
+    text-decoration: none;
+    font-family: "Averia Serif Libre";
+    font-size: 40px;
+    text-shadow:2px 2px 5px rgb(207, 239, 220);
+}
+
+.fade-out:hover{
+    animation: fadeOut ease 5s;
+    -webkit-animation: fadeOut ease 5s;
+}
+
+@keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+
+.item3{
+    width: 1300px;
+    font-size: 30px;
+    text-indent: 2em;
+    margin-left: 200px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    line-height: 1.7em;
+}
+
+
+.flower {
+    font-size: 40px;
+    font-family: "Averia Serif Libre";
+    color:rgb(11, 82, 38);
+    text-shadow:2px 2px 5px rgb(207, 239, 220);
+}
+
+
+.flower:hover::after{
+    animation: flower 2s linear infinite;
+    content: "";
+    
+}
+
+@keyframes flower {
+
+    0% {
+        content: "flower arrangment";
+    }
+  
+    10% {
+        content: "lowfer ranergemtn";
+    }
+
+    25% {
+        content: "felowr areremgtn";
+    }
+
+    50% {
+        content: "folwer anrerangemt";
+    }
+
+    100% {
+        content: "flower arrangment";
+    }
+
+}
+
+.blend {
+    font-size: 40px;
+    font-family: "Averia Serif Libre";
+    color:rgb(11, 82, 38);
+    text-shadow:2px 2px 5px rgb(207, 239, 220);
+    transition: all .2s linear;
+}
+
+.blend:hover { 
+    color: rgb(161, 185, 170);
+    text-shadow: none;
+}
+
+.blend2 {
+    font-size: 40px;
+    font-family: "Averia Serif Libre";
+    color:rgb(8, 58, 27);
+    text-shadow:2px 2px 5px rgb(207, 239, 220);
+    transition: all .2s linear;
+}
+
+.blend2:hover { 
+    color: rgb(161, 185, 170);
+    text-shadow: none;
+}
+
+.item4{
+    width: 1300px;
+    font-size: 30px;
+    text-indent: 2em;
+    margin-left: 200px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    line-height: 1.7em;
+}
+
+.four2 {
+    font-size: 40px;
+    font-family: "Averia Serif Libre";
+    color:rgb(11, 82, 38);
+    text-shadow:2px 2px 5px rgb(207, 239, 220);
+}
+
+
+.item5{
+    width: 1300px;
+    font-size: 30px;
+    text-indent: 2em;
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    line-height: 1.7em;
+}
+
+.item6{
+    width: 1300px;
+    font-size: 30px;
+    text-indent: 2em;
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    line-height: 1.7em;
+}
+
+.item7{
+    width: 1300px;
+    font-size: 30px;
+    text-indent: 2em;
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    line-height: 1.7em;
+}
+
+.item8{
+    width: 1300px;
+    font-size: 30px;
+    text-indent: 2em;
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    line-height: 1.7em;
+}
+
+.item9{
+    width: 1300px;
+    font-size: 30px;
+    text-indent: 2em;
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    line-height: 1.7em;
+}
+
+.item10{
+    width: 1300px;
+    font-size: 30px;
+    text-indent: 2em;
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    line-height: 1.7em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
